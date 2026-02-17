@@ -24,7 +24,7 @@
             <img
                 src="/logo.svg"
                 alt="Lexacta"
-                class="h-10 w-auto bg-white rounded-lg px-3 py-1.5 opacity-90 hover:opacity-100 transition-all shadow-sm"
+                class="h-10 w-auto hover:opacity-100 transition-all shadow-sm"
             />
             <div class="text-gray-400 text-sm">
                 &copy; 2026 Lexacta LegalTech. Todos los derechos reservados.
