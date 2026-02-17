@@ -1,21 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
-  <defs>
-    <style>
-      .text { font-family: 'Inter', system-ui, sans-serif; font-weight: 800; font-size: 28px; fill: #0f172a; }
-      .white-x { font-family: 'Inter', system-ui, sans-serif; font-weight: 800; font-size: 28px; fill: #ffffff; }
-    </style>
-  </defs>
+<svg width="180" height="50" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon Container -->
+  <rect x="0" y="0" width="50" height="50" rx="12" fill="#F97316"/>
+  
+  <!-- Shield Check Icon -->
+  <path d="M25 13C25 13 15 14 15 22C15 29 20 35 25 37C30 35 35 29 35 22C35 14 25 13 25 13Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M20 22L23 25L30 18" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- "Le" -->
-  <text x="5" y="30" class="text">Le</text>
-  
-  <!-- Orange Box -->
-  <!-- Tilted/Perspective shape or just a clean rectangle? User said "profesional". A slight skew looks modern. -->
-  <path d="M42 5 L68 2 L68 38 L42 35 Z" fill="#ff6b00" />
-  
-  <!-- "x" inside box -->
-  <text x="55" y="30" class="white-x" text-anchor="middle">x</text>
-  
-  <!-- "acta" -->
-  <text x="75" y="30" class="text">acta</text>
+  <!-- Text -->
+  <text x="65" y="32" fill="white" font-family="Inter, sans-serif" font-weight="bold" font-size="28">Lexacta</text>
 </svg>

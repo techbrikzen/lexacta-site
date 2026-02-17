@@ -18,9 +18,7 @@
 >
     <!-- Header -->
     <div class="h-20 flex items-center px-6 border-b border-white/5 gap-3">
-        <div class="bg-white rounded-md px-2 py-1 shadow-md">
-            <img src="/logo.svg" alt="Lexacta" class="h-7 w-auto" />
-        </div>
+        <img src="/logo.svg" alt="Lexacta" class="h-7 w-auto" />
         <span
             class="ml-auto px-1.5 py-0.5 rounded bg-accent/20 text-accent text-[10px] font-bold"
             >PRO</span
