@@ -23,6 +23,15 @@
                 window.location.hostname === "localhost" ||
                 window.location.hostname === "127.0.0.1";
 
+            console.log(
+                "📊 GA4 Initialized. Environment:",
+                isLocal ? "Development (DebugView)" : "Production",
+            );
+            if (isLocal)
+                console.log(
+                    "ℹ️ En local, los datos van a Admin > DebugView en GA4.",
+                );
+
             gtag("config", "{trackingId}", {
                 debug_mode: isLocal,
                 traffic_type: isLocal ? "development" : "production",
