@@ -8,11 +8,11 @@ Este proyecto utiliza **GitHub Actions** para desplegar automáticamente en **Pr
 2. Haz clic en **Settings** (Configuración).
 3. En el menú de la izquierda, busca **Environments**.
 4. Haz clic en **New environment**.
-5. Crea un entorno llamado: `production`
+5. Crea un entorno llamado: `prod`
 
 ## Paso 2: Agregar Secretos al Entorno
 
-Dentro del entorno `production` (en **Settings** > **Environments** > **production**), agrega las siguientes **Environment secrets**:
+Dentro del entorno `prod` (en **Settings** > **Environments** > **prod**), agrega las siguientes **Environment secrets**:
 
 *   `FTP_SERVER`: Dirección del servidor FTP (ej. `ftp.tudominio.com`).
 *   `FTP_USERNAME`: Usuario FTP.
@@ -27,4 +27,4 @@ Dentro del entorno `production` (en **Settings** > **Environments** > **producti
    git merge tu-rama-feature
    git push origin main
    ```
-3. GitHub Actions detectará el push a `main`, usará los secretos del entorno `production` y desplegará los cambios.
+3. GitHub Actions detectará el push a `main`, usará los secretos del entorno `prod` y desplegará los cambios.
