@@ -26,8 +26,20 @@
                 alt="Lexacta"
                 class="h-10 w-auto hover:opacity-100 transition-all shadow-sm"
             />
-            <div class="text-gray-400 text-sm">
-                &copy; 2026 Lexacta LegalTech. Todos los derechos reservados.
+            <div
+                class="text-gray-400 text-sm flex flex-col md:flex-row items-center gap-2 md:gap-6 text-center md:text-right"
+            >
+                <span>&copy; 2026 Lexacta. Todos los derechos reservados.</span>
+                <span class="hidden md:inline text-gray-600">|</span>
+                <span>
+                    Desarrollado por <a
+                        href="https://brikzen.ar"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent hover:text-white transition-colors font-medium"
+                        >Brikzen.ar</a
+                    >
+                </span>
             </div>
         </div>
     </footer>
