@@ -1,30 +1,42 @@
 <script lang="ts">
-    import { Mail, ArrowRight, CheckCircle2 } from "lucide-svelte";
+    import { Mail, ArrowRight, CheckCircle2, AlertCircle } from "lucide-svelte";
+    import { supabase } from "$lib/supabase";
 
     let email = "";
     let name = "";
     let submitted = false;
+    let loading = false;
+    let errorMessage = "";
 
-    function handleSubmit(e: Event) {
+    async function handleSubmit(e: Event) {
         e.preventDefault();
-        const form = e.target as HTMLFormElement;
-        const formData = new FormData(form);
+        loading = true;
+        errorMessage = "";
 
-        // Netlify Forms AJAX submission
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData as any).toString(),
-        })
-            .then(() => {
-                submitted = true;
-                setTimeout(() => {
-                    submitted = false;
-                    email = "";
-                    name = "";
-                }, 5000);
-            })
-            .catch((error) => console.error("Error:", error));
+        try {
+            const { error } = await supabase.rpc("register_interest", {
+                p_name: name,
+                p_email: email,
+            });
+
+            if (error) {
+                console.error("Supabase error:", error);
+                throw error;
+            }
+
+            submitted = true;
+            setTimeout(() => {
+                submitted = false;
+                email = "";
+                name = "";
+            }, 5000);
+        } catch (err: any) {
+            console.error("Error submitting form:", err);
+            errorMessage =
+                "Hubo un error al registrar tu solicitud. Por favor intenta nuevamente.";
+        } finally {
+            loading = false;
+        }
     }
 </script>
 
@@ -69,18 +81,18 @@
                 </p>
             </div>
         {:else}
-            <!-- 
-                Formulario configurado para Netlify Forms. 
-                Si usas otro proveedor (ej. Formspree), cambia 'action' y 'method'.
-            -->
             <form
-                name="waitlist"
-                method="POST"
-                data-netlify="true"
                 onsubmit={handleSubmit}
                 class="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm max-w-md mx-auto shadow-2xl"
             >
-                <input type="hidden" name="form-name" value="waitlist" />
+                {#if errorMessage}
+                    <div
+                        class="mb-4 p-3 bg-red-500/20 border border-red-500/50 rounded-lg flex items-center gap-2 text-red-200 text-sm"
+                    >
+                        <AlertCircle class="w-4 h-4" />
+                        {errorMessage}
+                    </div>
+                {/if}
 
                 <div class="space-y-4 text-left">
                     <div>
@@ -95,8 +107,9 @@
                             name="name"
                             bind:value={name}
                             required
+                            disabled={loading}
                             placeholder="Dr. Juan Pérez"
-                            class="w-full bg-primary-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
+                            class="w-full bg-primary-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all disabled:opacity-50"
                         />
                     </div>
 
@@ -116,20 +129,26 @@
                                 name="email"
                                 bind:value={email}
                                 required
+                                disabled={loading}
                                 placeholder="juan@estudio.com"
-                                class="w-full bg-primary-dark border border-white/10 rounded-lg pl-10 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
+                                class="w-full bg-primary-dark border border-white/10 rounded-lg pl-10 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all disabled:opacity-50"
                             />
                         </div>
                     </div>
 
                     <button
                         type="submit"
-                        class="w-full bg-accent hover:bg-accent-hover text-white font-bold py-3.5 rounded-lg transition-all shadow-lg shadow-accent/20 hover:shadow-accent/40 flex items-center justify-center gap-2 mt-2 group"
+                        disabled={loading}
+                        class="w-full bg-accent hover:bg-accent-hover text-white font-bold py-3.5 rounded-lg transition-all shadow-lg shadow-accent/20 hover:shadow-accent/40 flex items-center justify-center gap-2 mt-2 group disabled:opacity-70 disabled:cursor-not-allowed"
                     >
-                        Unirme a la Lista de Espera
-                        <ArrowRight
-                            class="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                        />
+                        {#if loading}
+                            Processing...
+                        {:else}
+                            Unirme a la Lista de Espera
+                            <ArrowRight
+                                class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                            />
+                        {/if}
                     </button>
                 </div>
                 <p class="text-xs text-center text-gray-500 mt-6">
