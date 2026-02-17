@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <defs>
+    <style>
+      .text { font-family: 'Inter', system-ui, sans-serif; font-weight: 800; font-size: 28px; fill: #0f172a; }
+      .white-x { font-family: 'Inter', system-ui, sans-serif; font-weight: 800; font-size: 28px; fill: #ffffff; }
+    </style>
+  </defs>
+
+  <!-- "Le" -->
+  <text x="5" y="30" class="text">Le</text>
+  
+  <!-- Orange Box -->
+  <!-- Tilted/Perspective shape or just a clean rectangle? User said "profesional". A slight skew looks modern. -->
+  <path d="M42 5 L68 2 L68 38 L42 35 Z" fill="#ff6b00" />
+  
+  <!-- "x" inside box -->
+  <text x="55" y="30" class="white-x" text-anchor="middle">x</text>
+  
+  <!-- "acta" -->
+  <text x="75" y="30" class="text">acta</text>
+</svg>
