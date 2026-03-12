@@ -8,28 +8,32 @@
     
     <div class="text-center max-w-3xl mx-auto mb-16">
       <h2 class="font-display font-bold text-3xl md:text-4xl text-primary mb-6">
-        La realidad del ejercicio profesional que nadie te enseñó
+        El problema no es solo la cantidad de trabajo. <br/>
+        <span class="text-accent italic">Es la complejidad de gestionarlo bien.</span>
       </h2>
+      <p class="font-body text-xl text-text-dark/70">
+        Cuando la información está fragmentada, el equipo legal trabaja más lento, con más esfuerzo y menos visibilidad.
+      </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       
       <FeatureCard 
-        title="Te llega un caso laboral y sos civilista"
-        text="Errores de plazos, términos incorrectos, estrategias equivocadas. Sin guía, el riesgo es tuyo."
-        icon={Scale}
+        title="Expedientes y documentos dispersos"
+        text="Múltiples escritos, fojas y pruebas en diferentes lugares. Riesgo de perder contexto o tiempo valioso buscando lo que necesitás."
+        icon={FileText}
       />
       
       <FeatureCard 
-        title="Los plazos no esperan"
-        text="Una fecha vencida puede hundir el mejor caso. ¿Estás 100% seguro de todos tus vencimientos de hoy?"
+        title="Tareas operativas repetitivas"
+        text="Adaptar terminología, buscar antecedentes y organizar la información te roba horas que no son facturables."
         icon={Clock}
       />
 
       <FeatureCard 
-        title="Escribir el escrito correcto lleva horas"
-        text="Buscar plantillas, adaptar terminología, revisar jurisprudencia... tiempo que no te pagan."
-        icon={FileText}
+        title="Seguimiento manual y riesgoso"
+        text="Llevar el control de plazos y actuaciones sin un sistema automatizado aumenta el margen de error humano."
+        icon={Scale}
       />
 
     </div>

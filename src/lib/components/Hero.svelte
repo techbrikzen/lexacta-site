@@ -14,17 +14,17 @@
     <div class="flex flex-col items-start text-left z-10">
       
       <h1 class="font-display font-bold text-5xl md:text-6xl text-primary leading-tight mb-6">
-        ¿Tomaste un caso fuera de tu especialidad?
+        Menos trabajo repetitivo. <span class="text-accent italic">Más inteligencia jurídica aplicada.</span>
       </h1>
       
       <p class="font-body text-xl md:text-2xl text-text-dark/80 mb-10 leading-relaxed max-w-2xl">
-        LEXACTA es el asistente legal que te guía paso a paso para que no cometas errores costosos. Como tener un senior a tu lado, sin el costo de uno.
+        La plataforma legal inteligente para estudios y equipos jurídicos que buscan más eficiencia operativa, más control y mejores decisiones.
       </p>
 
       <!-- CTAs -->
       <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-10 font-ui">
         <Button href="#registro" variant="accent" size="lg">
-          Empezar gratis — 7 días sin tarjeta
+          Solicitar demo
         </Button>
         <Button onclick={() => showVideo = true} variant="outline" size="lg">
           <PlayCircle size={20} />

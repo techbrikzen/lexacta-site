@@ -20,71 +20,75 @@
     ScanText,
     CircleDollarSign,
     CalendarRange,
-    ArrowRight
+    ArrowRight,
+    Clock
   } from "lucide-svelte";
 
   let activeTab = $state(0);
 
-  const modules = [
+  type Feature = { icon: any; text: string; isStar?: boolean };
+  type Module = { id: string; tabTitle: string; icon: any; title: string; features: Feature[]; badge: string; imageColor: string; imageStroke: string; };
+
+  const modules: Module[] = [
     {
-      id: "laboral",
-      tabTitle: "Lex-Laboral",
-      icon: Briefcase,
-      title: "Para cuando un caso laboral llega a tu estudio",
+      id: "gestion",
+      tabTitle: "Gestión Centralizada",
+      icon: Folders,
+      title: "Todo el contexto del caso en un solo lugar",
       features: [
-        { icon: Calculator, text: "Calculadora de indemnizaciones actualizada con jurisprudencia local" },
-        { icon: CalendarClock, text: "Gestor de plazos con alertas por WhatsApp" },
-        { icon: FileText, text: "Generador de escritos adaptados al tipo de caso" },
-        { icon: Sparkles, text: "Modo 'Primer Caso': guía como si tuvieras un laboralista al lado", isStar: true },
+        { icon: FileText, text: "Reúne expedientes, archivos, notas y antecedentes." },
+        { icon: Users, text: "Comparte información clave con tu equipo de trabajo de forma segura." },
+        { icon: LayoutDashboard, text: "Visualiza el estado global de todos tus casos en un dashboard." },
+        { icon: ScanText, text: "Clasificación automática de documentos ingresados.", isStar: true },
       ],
-      badge: "Modo Primer Caso",
+      badge: "Orden Constante",
       imageColor: "bg-blue-100",
       imageStroke: "stroke-blue-600",
     },
     {
-      id: "penal",
-      tabTitle: "Lex-Penal",
-      icon: ShieldAlert,
-      title: "Para causas penales en un estudio generalista",
+      id: "analisis",
+      tabTitle: "IA Auditable",
+      icon: Sparkles,
+      title: "Convierte volumen en claridad operativa",
       features: [
-        { icon: GitBranch, text: "Línea de tiempo penal interactiva", isStar: true },
-        { icon: ShieldCheck, text: "Generador de defensas preliminares por tipo de delito" },
-        { icon: ListChecks, text: "Checklist de preparación para audiencias" },
-        { icon: BookOpenText, text: "Base de estrategias defensivas con historial de éxito" },
+        { icon: FileText, text: "Resume documentos extensos para acelerar la comprensión.", isStar: true },
+        { icon: ShieldCheck, text: "Generación de reportes ejecutivos automáticos." },
+        { icon: BookOpenText, text: "Identifica puntos clave para la estrategia legal." },
+        { icon: GitBranch, text: "Cada sugerencia mantiene el enlace a la foja original." },
       ],
-      badge: "Línea de Tiempo Interactiva",
-      imageColor: "bg-red-100",
-      imageStroke: "stroke-red-600",
+      badge: "Trazabilidad Total",
+      imageColor: "bg-purple-100",
+      imageStroke: "stroke-purple-600",
     },
     {
-      id: "portal",
-      tabTitle: "Portal Cliente",
-      icon: Users,
-      title: "Tus clientes siempre informados, vos siempre tranquilo",
+      id: "automatizacion",
+      tabTitle: "Automatización",
+      icon: Activity,
+      title: "Reduce tiempo en tareas operativas",
       features: [
-        { icon: Activity, text: "Semáforo visual del estado del proceso (Verde / Amarillo / Rojo)" },
-        { icon: MessageCircle, text: "Mensajería encriptada directa" },
-        { icon: Smartphone, text: "Notificaciones automáticas por WhatsApp" },
-        { icon: PenTool, text: "Firma digital de documentos integrada" },
+        { icon: Clock, text: "Control y seguimiento automático de vencimientos." },
+        { icon: MessageCircle, text: "Notificaciones proactivas de cambios en el expediente." },
+        { icon: PenTool, text: "Generación de borradores y plantillas adaptadas al fuero." },
+        { icon: CalendarRange, text: "Sincronización directa con tu calendario de trabajo." },
       ],
       badge: "",
       imageColor: "bg-green-100",
       imageStroke: "stroke-green-600",
     },
     {
-      id: "despacho",
-      tabTitle: "Mi Despacho",
-      icon: LayoutDashboard,
-      title: "Tu estudio organizado desde un solo lugar",
+      id: "procuracion",
+      tabTitle: "Procuración",
+      icon: Briefcase,
+      title: "Control total sobre tus actuaciones",
       features: [
-        { icon: Folders, text: "Dashboard con todos los casos de un vistazo" },
-        { icon: ScanText, text: "OCR que clasifica documentos automáticamente" },
-        { icon: CircleDollarSign, text: "Control de honorarios y facturación por etapas" },
-        { icon: CalendarRange, text: "Integración con Google Calendar y Office 365" },
+        { icon: ListChecks, text: "Organiza tareas, estados y evolución de cada caso." },
+        { icon: CircleDollarSign, text: "Control de honorarios y facturación por etapas procesales." },
+        { icon: ShieldAlert, text: "Alertas tempranas de caducidad o inactividad." },
+        { icon: Smartphone, text: "Accede y actualiza la información desde cualquier dispositivo." },
       ],
       badge: "",
-      imageColor: "bg-purple-100",
-      imageStroke: "stroke-purple-600",
+      imageColor: "bg-red-100",
+      imageStroke: "stroke-red-600",
     },
   ];
 </script>
@@ -94,8 +98,11 @@
     
     <div class="text-center max-w-4xl mx-auto mb-16">
       <h2 class="font-display font-bold text-3xl md:text-5xl text-primary mb-6 leading-tight">
-        Todo lo que necesitás para trabajar con confianza, <span class="text-accent italic">aunque no seas el experto.</span>
+        IA auditable diseñada para <span class="text-accent italic">reducir tu carga operativa.</span>
       </h2>
+      <p class="font-body text-xl text-text-dark/70">
+        Con trazabilidad total, revisión humana integrada y seguridad documental. Vos siempre mantenés el control del caso.
+      </p>
     </div>
 
     <!-- Tabs Navigation -->

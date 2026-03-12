@@ -38,33 +38,34 @@
         <h4 class="font-ui font-bold text-white mb-6 uppercase tracking-wider text-sm">Producto</h4>
         <ul class="space-y-4 font-body text-gray-400 text-sm">
           <li><a href="#funcionalidades" class="hover:text-accent transition-colors">Funcionalidades</a></li>
-          <li><a href="#precios" class="hover:text-accent transition-colors">Planes y Precios</a></li>
-          <li><a href="#casos-de-uso" class="hover:text-accent transition-colors">Casos de Uso</a></li>
-          <li><a href="#faq" class="hover:text-accent transition-colors">Preguntas Frecuentes</a></li>
+          <li><a href="#precios" class="hover:text-accent transition-colors">Planes y precios</a></li>
+          <li><a href="#casos-de-uso" class="hover:text-accent transition-colors">Casos de uso</a></li>
+          <li><a href="#faq" class="hover:text-accent transition-colors">Preguntas frecuentes</a></li>
         </ul>
       </div>
 
       <!-- Links Column 2 -->
       <div class="col-span-1 md:col-span-1">
-        <h4 class="font-ui font-bold text-white mb-6 uppercase tracking-wider text-sm">Legal & Ayuda</h4>
+        <h4 class="font-ui font-bold text-white mb-6 uppercase tracking-wider text-sm">Legal y ayuda</h4>
         <ul class="space-y-4 font-body text-gray-400 text-sm">
-          <li><a href="#" class="hover:text-accent transition-colors">Términos y Condiciones</a></li>
-          <li><a href="#" class="hover:text-accent transition-colors">Política de Privacidad</a></li>
-          <li><a href="#" class="hover:text-accent transition-colors">Blog Jurídico</a></li>
-          <li><a href="#" class="hover:text-accent transition-colors">Contacto Soport</a></li>
+          <li><a href="#" class="hover:text-accent transition-colors">Términos y condiciones</a></li>
+          <li><a href="#" class="hover:text-accent transition-colors">Política de privacidad</a></li>
+          <li><a href="#" class="hover:text-accent transition-colors">Blog jurídico</a></li>
+          <li><a href="#" class="hover:text-accent transition-colors">Soporte técnico</a></li>
         </ul>
       </div>
 
       <!-- Contact Info -->
       <div class="col-span-1 md:col-span-1">
-        <h4 class="font-ui font-bold text-white mb-6 uppercase tracking-wider text-sm">Comunícate</h4>
+        <h4 class="font-ui font-bold text-white mb-6 uppercase tracking-wider text-sm">Comunicate</h4>
         <ul class="space-y-4 font-body text-gray-400 text-sm">
-          <li class="flex flex-col">
+          <li class="flex flex-col mb-4">
             <span class="text-xs text-gray-500 uppercase tracking-widest mb-1">Ventas</span>
-            <a href="mailto:ventas@lexacta.com" class="hover:text-accent transition-colors font-medium text-white">ventas@lexacta.com</a>
+            <a href="tel:+5491176157868" class="hover:text-accent transition-colors font-medium text-white mb-1">+54 9 11 7615-7868</a>
+            <a href="mailto:ventas@brikzen.ar" class="hover:text-accent transition-colors font-medium text-white">ventas@brikzen.ar</a>
           </li>
           <li class="flex flex-col">
-            <span class="text-xs text-gray-500 uppercase tracking-widest mb-1">WhatsApp Directo</span>
+            <span class="text-xs text-gray-500 uppercase tracking-widest mb-1">WhatsApp directo</span>
             <a href="https://wa.me/5491176157868?text=Hola,%20vengo%20de%20la%20web.%20Quiero%20info%20sobre%20Lexacta." target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors font-medium text-white">+54 9 11 7615-7868</a>
           </li>
         </ul>
@@ -80,7 +81,7 @@
         </p>
       </div>
       <p class="font-ui text-xs text-gray-500">
-        &copy; 2026 LEXACTA. Todos los derechos reservados. | Desarrollado por <a href="https://brikzen.ar" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">Brikzen.ar</a>
+        &copy; 2026 LEXACTA. Todos los derechos reservados. | Lexacta es un producto desarrollado por <a href="https://www.brikzen.ar" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">Brikzen.ar</a>
       </p>
     </div>
 
