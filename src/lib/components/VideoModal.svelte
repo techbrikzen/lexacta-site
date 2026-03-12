@@ -4,8 +4,8 @@
   import { createEventDispatcher } from 'svelte';
 
   export let show = false;
-  // Use a reliable placeholder video (e.g., YouTube embed format)
-  export let videoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1"; 
+  // Local promotional video
+  export let videoUrl = "/Propuesta_de_Video_Promocional_Lexacta.mp4"; 
 
   const dispatch = createEventDispatcher();
 
@@ -49,14 +49,15 @@
         <X size={24} />
       </button>
 
-      <!-- Video iframe -->
-      <iframe 
+      <!-- Video Player -->
+      <!-- svelte-ignore a11y_media_has_caption -->
+      <video 
         src={videoUrl} 
-        class="w-full h-full border-0"
+        class="w-full h-full object-contain bg-black border-0"
+        controls
+        autoplay
         title="Lexacta Demo Video"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen
-      ></iframe>
+      ></video>
       
     </div>
   </div>
