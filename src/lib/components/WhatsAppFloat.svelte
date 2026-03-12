@@ -2,7 +2,7 @@
   import { MessageCircle } from "lucide-svelte";
   
   // URL to WhatsApp with pre-filled message
-  const whatsappUrl = "https://wa.me/5491112345678?text=Hola,%20vengo%20de%20la%20web.%20Quiero%20info%20sobre%20Lexacta.";
+  const whatsappUrl = "https://wa.me/5491176157868?text=Hola,%20vengo%20de%20la%20web.%20Quiero%20info%20sobre%20Lexacta.";
 </script>
 
 <a 
