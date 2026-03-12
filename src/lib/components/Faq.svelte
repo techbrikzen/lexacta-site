@@ -40,7 +40,7 @@
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
       <h2 class="font-display font-bold text-3xl md:text-4xl text-primary mb-4">
-        Preguntas frecuentes
+        Dudas comunes
       </h2>
       <p class="font-body text-xl text-text-dark/70">
         Resolvemos tus dudas principales.

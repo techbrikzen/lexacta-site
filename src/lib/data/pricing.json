@@ -1,0 +1,69 @@
+[
+  {
+    "name": "BÁSICO",
+    "priceMonthly": "8.990",
+    "priceAnnual": "7.490",
+    "audience": "Ideal para abogados independientes",
+    "features": [
+      "1 usuario + portal para 10 clientes",
+      "1 módulo a elección (Laboral o Penal)",
+      "50 documentos/mes",
+      "WhatsApp + Google Calendar",
+      "Soporte por email",
+      "<strong class='text-accent'>7 días gratis para probar</strong>"
+    ],
+    "cta": "Empezar gratis",
+    "highlight": false
+  },
+  {
+    "name": "PROFESIONAL",
+    "priceMonthly": "14.990",
+    "priceAnnual": "12.490",
+    "audience": "Para estudios de 2-3 abogados",
+    "features": [
+      "3 usuarios + portal para 30 clientes",
+      "2 módulos (Laboral + Penal)",
+      "Documentos ilimitados",
+      "Todas las integraciones",
+      "Asistentes inteligentes incluidos",
+      "Soporte prioritario + implementación"
+    ],
+    "cta": "Empezar gratis",
+    "highlight": true,
+    "badge": "Más elegido"
+  },
+  {
+    "name": "AVANZADO",
+    "priceMonthly": "24.990",
+    "priceAnnual": "20.825",
+    "audience": "Para estudios de 4-8 abogados",
+    "features": [
+      "5 usuarios + clientes ilimitados",
+      "Todos los módulos",
+      "Microsoft Copilot integration",
+      "Capacitación mensual en vivo",
+      "Reportes de productividad",
+      "<strong class='text-accent'>Pago anual: 2 meses gratis</strong>"
+    ],
+    "cta": "Empezar gratis",
+    "highlight": false
+  },
+  {
+    "name": "CORPORATIVO",
+    "priceMonthly": "49.990",
+    "priceAnnual": "41.650",
+    "prefix": "Desde ",
+    "audience": "Departamentos legales de empresas",
+    "features": [
+      "Usuarios ilimitados",
+      "Personalización de módulos",
+      "Integraciones a medida",
+      "Soporte dedicado 24/7",
+      "Implementación en sitio",
+      "Evaluación gratuita de necesidades"
+    ],
+    "cta": "Hablar con un asesor",
+    "highlight": false,
+    "dark": true
+  }
+]

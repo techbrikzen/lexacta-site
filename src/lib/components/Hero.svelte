@@ -1,7 +1,9 @@
 <script lang="ts">
   import { ArrowRight, Check, PlayCircle } from "lucide-svelte";
   import Button from "./ui/Button.svelte";
-  export let onDemo: () => void;
+  import VideoModal from "./VideoModal.svelte";
+  
+  let showVideo = false;
 </script>
 
 <div class="relative bg-base pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
@@ -24,7 +26,7 @@
         <Button href="#registro" variant="accent" size="lg">
           Empezar gratis — 7 días sin tarjeta
         </Button>
-        <Button onclick={onDemo} variant="outline" size="lg">
+        <Button onclick={() => showVideo = true} variant="outline" size="lg">
           <PlayCircle size={20} />
           Ver cómo funciona
         </Button>
@@ -112,3 +114,5 @@
     
   </div>
 </div>
+
+<VideoModal bind:show={showVideo} />
