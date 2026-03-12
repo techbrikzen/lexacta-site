@@ -62,7 +62,7 @@
           <li class="flex flex-col mb-4">
             <span class="text-xs text-gray-500 uppercase tracking-widest mb-1">Ventas</span>
             <a href="tel:+5491176157868" class="hover:text-accent transition-colors font-medium text-white mb-1">+54 9 11 7615-7868</a>
-            <a href="mailto:ventas@lexacta.com" class="hover:text-accent transition-colors font-medium text-white">ventas@lexacta.com</a>
+            <a href="mailto:ventas@brikzen.ar" class="hover:text-accent transition-colors font-medium text-white">ventas@brikzen.ar</a>
           </li>
           <li class="flex flex-col">
             <span class="text-xs text-gray-500 uppercase tracking-widest mb-1">WhatsApp directo</span>
