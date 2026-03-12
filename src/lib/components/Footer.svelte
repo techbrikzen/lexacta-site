@@ -48,10 +48,10 @@
       <div class="col-span-1 md:col-span-1">
         <h4 class="font-ui font-bold text-white mb-6 uppercase tracking-wider text-sm">Legal y ayuda</h4>
         <ul class="space-y-4 font-body text-gray-400 text-sm">
-          <li><a href="#/" class="hover:text-accent transition-colors">Términos y condiciones</a></li>
-          <li><a href="#/" class="hover:text-accent transition-colors">Política de privacidad</a></li>
-          <li><a href="#/" class="hover:text-accent transition-colors">Blog jurídico</a></li>
-          <li><a href="#/" class="hover:text-accent transition-colors">Soporte técnico</a></li>
+          <li><span role="link" tabindex="0" class="hover:text-accent transition-colors cursor-pointer">Términos y condiciones</span></li>
+          <li><span role="link" tabindex="0" class="hover:text-accent transition-colors cursor-pointer">Política de privacidad</span></li>
+          <li><span role="link" tabindex="0" class="hover:text-accent transition-colors cursor-pointer">Blog jurídico</span></li>
+          <li><span role="link" tabindex="0" class="hover:text-accent transition-colors cursor-pointer">Soporte técnico</span></li>
         </ul>
       </div>
 
