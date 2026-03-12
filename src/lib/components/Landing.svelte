@@ -1,46 +1,60 @@
 <script lang="ts">
     import Navbar from "./Navbar.svelte";
     import Hero from "./Hero.svelte";
-    import Features from "./Features.svelte";
-    import Waitlist from "./Waitlist.svelte";
+    import LaunchBanner from "./LaunchBanner.svelte";
+    import Problem from "./Problem.svelte";
+    import FeaturesTabs from "./FeaturesTabs.svelte";
+    import Assistants from "./Assistants.svelte";
+    import Integrations from "./Integrations.svelte";
+    import Pricing from "./Pricing.svelte";
+    import Roadmap from "./Roadmap.svelte";
+    import Faq from "./Faq.svelte";
+    import FinalCta from "./FinalCta.svelte";
+    import Footer from "./Footer.svelte";
 
     export let onLogin: () => void;
 </script>
 
-<div
-    class="font-sans antialiased text-gray-900 bg-white min-h-screen flex flex-col"
->
+<div class="antialiased min-h-screen flex flex-col relative w-full overflow-x-hidden pt-20">
+    <!-- Navbar (Sticky at top) -->
     <Navbar {onLogin} />
-    <main class="flex-grow">
+
+    <main class="flex-grow w-full">
+        <!-- Main Hero Section -->
         <Hero onDemo={onLogin} />
-        <Features />
-        <Waitlist />
+        
+        <!-- Launch Offer Banner -->
+        <LaunchBanner />
+
+        <!-- Agitation / Problem Section -->
+        <div id="casos-de-uso">
+          <Problem />
+        </div>
+
+        <!-- Solutions / Modules -->
+        <FeaturesTabs />
+
+        <!-- Highlighted AI Assistants -->
+        <Assistants />
+
+        <!-- Integrations -->
+        <Integrations />
+
+        <!-- Pricing -->
+        <Pricing />
+
+        <!-- Roadmap -->
+        <Roadmap />
+
+        <!-- FAQ -->
+        <Faq />
+        
+        <!-- Final Call to Action -->
+        <div id="registro">
+          <FinalCta />
+        </div>
     </main>
 
-    <footer class="bg-primary py-12 border-t border-white/10">
-        <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6"
-        >
-            <img
-                src="/logo.svg"
-                alt="Lexacta"
-                class="h-10 w-auto hover:opacity-100 transition-all shadow-sm"
-            />
-            <div
-                class="text-gray-400 text-sm flex flex-col md:flex-row items-center gap-2 md:gap-6 text-center md:text-right"
-            >
-                <span>&copy; 2026 Lexacta. Todos los derechos reservados.</span>
-                <span class="hidden md:inline text-gray-600">|</span>
-                <span>
-                    Desarrollado por <a
-                        href="https://brikzen.ar"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-accent hover:text-white transition-colors font-medium"
-                        >Brikzen.ar</a
-                    >
-                </span>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer with legal disclaimer -->
+    <Footer />
 </div>
