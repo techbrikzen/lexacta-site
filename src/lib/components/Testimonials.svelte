@@ -8,7 +8,7 @@
       role: "Especialista en Familia (CABA)"
     },
     {
-      quote: "La función de 'evitar caducidad' ya me salvó de dos multas. Es como tener un procurador revisando mis causas 24/7.",
+      quote: "La función de 'evitar caducidad' ya me salvó de perder clientes. Es como tener un procurador revisando mis causas 24/7.",
       author: "Dr. Leandro S.",
       role: "Socio Fundador (Córdoba)"
     },
@@ -27,7 +27,7 @@
         Colegas que ya confían en <span class="text-accent italic">LEXACTA</span>
       </h2>
       <p class="font-body text-xl text-text-dark/70">
-        Descubre cómo están transformando su práctica diaria recomendados por más de 1,200 profesionales.
+        Sumate a los profesionales que ya confían en LEXACTA y descubrí cómo transformar tu práctica diaria.
       </p>
     </div>
 

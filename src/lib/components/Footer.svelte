@@ -21,10 +21,10 @@
 
         <!-- Socials -->
         <div class="flex gap-4">
-          <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-accent transition-colors">
+          <a href="https://www.linkedin.com/company/brikzen/about/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-accent transition-colors">
             <Linkedin size={20} />
           </a>
-          <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-accent transition-colors">
+          <a href="https://instagram.com/brikzen.digital" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-accent transition-colors">
             <Instagram size={20} />
           </a>
           <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-green-400 transition-colors">
