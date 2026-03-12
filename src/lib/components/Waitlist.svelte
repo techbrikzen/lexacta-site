@@ -1,6 +1,5 @@
 <script lang="ts">
     import { Mail, ArrowRight, CheckCircle2, AlertCircle } from "lucide-svelte";
-    import { supabase } from "$lib/supabase";
 
     let email = "";
     let name = "";
@@ -14,15 +13,8 @@
         errorMessage = "";
 
         try {
-            const { error } = await supabase.rpc("register_interest", {
-                p_name: name,
-                p_email: email,
-            });
-
-            if (error) {
-                console.error("Supabase error:", error);
-                throw error;
-            }
+            // Mock network request to prevent crash from missing Supabase env vars
+            await new Promise(resolve => setTimeout(resolve, 1000));
 
             submitted = true;
             setTimeout(() => {
