@@ -5,12 +5,14 @@
     import Problem from "./Problem.svelte";
     import FeaturesTabs from "./FeaturesTabs.svelte";
     import Assistants from "./Assistants.svelte";
+    import Testimonials from "./Testimonials.svelte";
     import Integrations from "./Integrations.svelte";
     import Pricing from "./Pricing.svelte";
     import Roadmap from "./Roadmap.svelte";
     import Faq from "./Faq.svelte";
     import FinalCta from "./FinalCta.svelte";
     import Footer from "./Footer.svelte";
+    import WhatsAppFloat from "./WhatsAppFloat.svelte";
 
     export let onLogin: () => void;
 </script>
@@ -21,7 +23,7 @@
 
     <main class="flex-grow w-full">
         <!-- Main Hero Section -->
-        <Hero onDemo={onLogin} />
+        <Hero />
         
         <!-- Launch Offer Banner -->
         <LaunchBanner />
@@ -36,6 +38,9 @@
 
         <!-- Highlighted AI Assistants -->
         <Assistants />
+
+        <!-- Social Proof -->
+        <Testimonials />
 
         <!-- Integrations -->
         <Integrations />
@@ -57,4 +62,7 @@
 
     <!-- Footer with legal disclaimer -->
     <Footer />
+    
+    <!-- Floating WhatsApp CTA -->
+    <WhatsAppFloat />
 </div>

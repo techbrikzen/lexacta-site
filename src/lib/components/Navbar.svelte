@@ -19,7 +19,7 @@
         <a href="#funcionalidades" class="text-sm font-medium hover:text-accent transition-colors">Funcionalidades</a>
         <a href="#precios" class="text-sm font-medium hover:text-accent transition-colors">Precios</a>
         <a href="#casos-de-uso" class="text-sm font-medium hover:text-accent transition-colors">Casos de Uso</a>
-        <a href="#faq" class="text-sm font-medium hover:text-accent transition-colors">FAQ</a>
+        <a href="#faq" class="text-sm font-medium hover:text-accent transition-colors">Consultas</a>
       </div>
 
       <!-- CTA (Desktop) -->
@@ -49,7 +49,7 @@
         <a href="#funcionalidades" class="block px-3 py-3 rounded-md text-base font-medium hover:bg-gray-100 transition-colors">Funcionalidades</a>
         <a href="#precios" class="block px-3 py-3 rounded-md text-base font-medium hover:bg-gray-100 transition-colors">Precios</a>
         <a href="#casos-de-uso" class="block px-3 py-3 rounded-md text-base font-medium hover:bg-gray-100 transition-colors">Casos de Uso</a>
-        <a href="#faq" class="block px-3 py-3 rounded-md text-base font-medium hover:bg-gray-100 transition-colors">FAQ</a>
+        <a href="#faq" class="block px-3 py-3 rounded-md text-base font-medium hover:bg-gray-100 transition-colors">Consultas</a>
         <a href="#registro" class="mt-4 block w-full text-center bg-accent text-white px-6 py-3 rounded-md font-semibold shadow-md">
           Probar 7 días gratis
         </a>

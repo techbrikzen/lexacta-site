@@ -80,7 +80,7 @@
         </p>
       </div>
       <p class="font-ui text-xs text-gray-500">
-        &copy; 2026 LEXACTA. Todos los derechos reservados. | Desarrollado por Brikzen.ar
+        &copy; 2026 LEXACTA. Todos los derechos reservados. | Desarrollado por <a href="https://brikzen.ar" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">Brikzen.ar</a>
       </p>
     </div>
 
