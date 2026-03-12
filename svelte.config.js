@@ -10,6 +10,9 @@ export default {
             assets: 'dist',
             precompress: false
         }),
-        appDir: 'app'
+        appDir: 'app',
+        paths: {
+            relative: false
+        }
     }
 };
