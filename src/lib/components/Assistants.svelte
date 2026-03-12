@@ -24,30 +24,33 @@
     
     <div class="text-center max-w-3xl mx-auto mb-16">
       <h2 class="font-display font-bold text-3xl md:text-5xl mb-6 leading-tight">
-        Tres asistentes que trabajan mientras vos <br class="hidden md:block" />
-        <span class="text-accent italic">te concentrás en tu cliente.</span>
+        Inteligencia artificial auditable, diseñada para <br class="hidden md:block" />
+        <span class="text-accent italic">el trabajo jurídico real.</span>
       </h2>
+      <p class="font-body text-xl text-white/80">
+        Lexacta no busca reemplazar tu criterio profesional. Busca fortalecerlo.
+      </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       
       <FeatureCard 
-        title='"No soy especialista en..."'
-        text='Seleccioná el fuero que no es el tuyo. LEXACTA te da el checklist de errores a evitar, el glosario del fuero y acceso a consultas con especialistas de la red.'
-        icon={ShieldQuestion}
-        darkTheme={true}
-      />
-
-      <FeatureCard 
-        title='"¿Qué haría un experto?"'
-        text='Analizamos casos similares exitosos y te sugerimos 3 estrategias con porcentaje histórico de éxito, costos y tiempos estimados.'
+        title="Asistencia y análisis inteligente"
+        text="Analizamos casos complejos, procesamos miles de fojas y te sugerimos estrategias concretas basadas en información estructurada."
         icon={Lightbulb}
         darkTheme={true}
       />
 
       <FeatureCard 
-        title='"Evitá la caducidad"'
-        text='Alertas escalonadas a 7 días, 3 días y 24 horas por WhatsApp y email. Verificación automática con feriados judiciales locales.'
+        title="Validación y revisión profesional"
+        text="Vos siempre tenés la última palabra. La tecnología acompaña y propone, pero el abogado dispone, aprueba y firma."
+        icon={ShieldQuestion}
+        darkTheme={true}
+      />
+
+      <FeatureCard 
+        title="Trazabilidad y visibilidad total"
+        text="Mantené el control sobre la información generada. Cada sugerencia de la IA está vinculada al documento original para facilitar tu revisión."
         icon={BellRing}
         darkTheme={true}
       />

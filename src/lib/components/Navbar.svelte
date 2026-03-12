@@ -25,7 +25,7 @@
       <!-- CTA (Desktop) -->
       <div class="hidden md:block">
         <Button onclick={onLogin} variant="accent" size="sm">
-          Probar 7 días gratis
+          Solicitar demo
         </Button>
       </div>
 
@@ -51,7 +51,7 @@
         <a href="#casos-de-uso" class="block px-3 py-3 rounded-md text-base font-medium hover:bg-gray-100 transition-colors">Casos de uso</a>
         <a href="#faq" class="block px-3 py-3 rounded-md text-base font-medium hover:bg-gray-100 transition-colors">Consultas</a>
         <a href="#registro" class="mt-4 block w-full text-center bg-accent text-white px-6 py-3 rounded-md font-semibold shadow-md">
-          Probar 7 días gratis
+          Solicitar demo
         </a>
       </div>
     </div>

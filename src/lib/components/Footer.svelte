@@ -66,7 +66,7 @@
           </li>
           <li class="flex flex-col">
             <span class="text-xs text-gray-500 uppercase tracking-widest mb-1">WhatsApp directo</span>
-            <a href="https://wa.me/5491112345678?text=Hola,%20vengo%20de%20la%20web.%20Quiero%20info%20sobre%20Lexacta." target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors font-medium text-white">+54 9 11 1234-5678</a>
+            <a href="https://wa.me/5491176157868?text=Hola,%20vengo%20de%20la%20web.%20Quiero%20info%20sobre%20Lexacta." target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors font-medium text-white">+54 9 11 7615-7868</a>
           </li>
         </ul>
       </div>
@@ -81,7 +81,7 @@
         </p>
       </div>
       <p class="font-ui text-xs text-gray-500">
-        &copy; 2026 LEXACTA. Todos los derechos reservados. | Lexacta es un producto desarrollado por <a href="https://brikzen.ar" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">Brikzen.ar</a>
+        &copy; 2026 LEXACTA. Todos los derechos reservados. | Lexacta es un producto desarrollado por <a href="https://www.brikzen.ar" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">Brikzen.ar</a>
       </p>
     </div>
 

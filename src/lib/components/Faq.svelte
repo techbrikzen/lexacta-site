@@ -26,6 +26,18 @@
     {
       q: "¿Funciona para todas las provincias argentinas?",
       a: "El módulo laboral y penal funcionan a nivel nacional. Las integraciones con sistemas judiciales cubren BA, CABA y Córdoba en la Fase 1, con más provincias en camino."
+    },
+    {
+      q: "¿La IA reemplaza al abogado?",
+      a: "No, la IA es tu asistente. Lexacta propone borradores y sugiere estrategias, pero el control final y el criterio profesional siempre son tuyos."
+    },
+    {
+      q: "¿Sirve para estudios pequeños o solo es 'Enterprise'?",
+      a: "Está pensada tanto para abogados independientes como para estudios jurídicos medianos y grandes. Se adapta perfectamente a tu volumen de casos y clientes."
+    },
+    {
+      q: "¿Cómo se valida lo que genera la IA?",
+      a: "Lexacta utiliza IA auditable. Cada sugerencia o borrador tiene trazabilidad directa a los documentos y fojas originales para que puedas revisar rápidamente."
     }
   ];
 
