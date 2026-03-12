@@ -112,7 +112,8 @@
           class="flex items-center gap-2 px-6 py-3 rounded-full font-ui font-bold text-sm transition-all duration-300 {activeTab === i ? 'bg-primary text-white shadow-md scale-105' : 'bg-base text-text-dark/70 hover:bg-gray-100'}"
           onclick={() => activeTab = i}
         >
-          <svelte:component this={mod.icon} size={18} />
+          {@const Icon = mod.icon}
+          <Icon size={18} />
           {mod.tabTitle}
         </button>
       {/each}
@@ -139,7 +140,8 @@
             {#each modules[activeTab].features as feature}
               <div class="flex items-start gap-4">
                 <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-full {feature.isStar ? 'bg-accent/20 text-accent' : 'bg-white border border-gray-200 text-primary'} flex items-center justify-center shadow-sm">
-                  <svelte:component this={feature.icon} size={16} />
+                  {@const Icon = feature.icon}
+                  <Icon size={16} />
                 </div>
                 <div>
                   <p class="font-body text-lg text-text-dark leading-snug {feature.isStar ? 'font-semibold' : ''}">
@@ -164,7 +166,8 @@
           <!-- Decorative abstract graphic -->
           <div class="relative z-10 w-full h-full flex flex-col items-center justify-center gap-6">
             <div class={`w-32 h-32 rounded-full ${modules[activeTab].imageColor} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500`}>
-               <svelte:component this={modules[activeTab].icon} size={64} class={`${modules[activeTab].imageStroke} opacity-80`} />
+               {@const Icon = modules[activeTab].icon}
+               <Icon size={64} class={`${modules[activeTab].imageStroke} opacity-80`} />
             </div>
             
             <div class="w-3/4 h-2 bg-gray-100 rounded-full overflow-hidden">
@@ -174,10 +177,12 @@
             
             <!-- Floating Elements -->
             <div class="absolute top-10 left-10 w-12 h-12 bg-white rounded-xl shadow-md border border-gray-100 flex items-center justify-center animate-bounce" style="animation-delay: 0.2s">
-              <svelte:component this={modules[activeTab].features[0].icon} size={20} class="text-primary" />
+              {@const Icon1 = modules[activeTab].features[0].icon}
+              <Icon1 size={20} class="text-primary" />
             </div>
             <div class="absolute bottom-10 right-10 w-12 h-12 bg-white rounded-xl shadow-md border border-gray-100 flex items-center justify-center animate-bounce" style="animation-delay: 0.5s">
-              <svelte:component this={modules[activeTab].features[1].icon} size={20} class="text-primary" />
+              {@const Icon2 = modules[activeTab].features[1].icon}
+              <Icon2 size={20} class="text-primary" />
             </div>
           </div>
         </div>
