@@ -5,7 +5,7 @@
 
   export let show = false;
   // Local promotional video
-  export let videoUrl = "/Propuesta_de_Video_Promocional_Lexacta.mp4"; 
+  export let videoUrl = "/lexcta_promo1.mp4"; 
 
   const dispatch = createEventDispatcher();
 
