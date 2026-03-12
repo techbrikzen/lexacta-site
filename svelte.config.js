@@ -9,6 +9,7 @@ export default {
             pages: 'dist',
             assets: 'dist',
             precompress: false
-        })
+        }),
+        appDir: 'app'
     }
 };
