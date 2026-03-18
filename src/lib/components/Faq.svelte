@@ -13,7 +13,7 @@
     },
     {
       q: "¿Puedo probarlo antes de pagar?",
-      a: "Sí. Tenés 7 días gratis sin tarjeta de crédito y sin compromiso. Y una garantía de satisfacción de 30 días."
+      a: "Sí. Tenés 7 días gratis sin compromiso y una garantía de satisfacción de 30 días."
     },
     {
       q: "¿Es segura la información de mis clientes?",

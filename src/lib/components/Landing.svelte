@@ -8,18 +8,16 @@
     import Testimonials from "./Testimonials.svelte";
     import Integrations from "./Integrations.svelte";
     import Pricing from "./Pricing.svelte";
-    import Roadmap from "./Roadmap.svelte";
     import Faq from "./Faq.svelte";
     import FinalCta from "./FinalCta.svelte";
     import Footer from "./Footer.svelte";
     import WhatsAppFloat from "./WhatsAppFloat.svelte";
 
-    export let onLogin: () => void;
 </script>
 
 <div class="antialiased min-h-screen flex flex-col relative w-full overflow-x-hidden pt-20">
     <!-- Navbar (Sticky at top) -->
-    <Navbar {onLogin} />
+    <Navbar />
 
     <main class="flex-grow w-full">
         <!-- Main Hero Section -->
@@ -47,9 +45,6 @@
 
         <!-- Pricing -->
         <Pricing />
-
-        <!-- Roadmap -->
-        <Roadmap />
 
         <!-- FAQ -->
         <Faq />

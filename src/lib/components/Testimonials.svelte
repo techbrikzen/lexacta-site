@@ -3,14 +3,14 @@
 
   const testimonials = [
     {
-      quote: "Antes evitaba los casos laborales por miedo a los plazos. Con LEXACTA, expandí los servicios de mi estudio un 40% y duermo tranquilo.",
+      quote: "Antes evitaba los casos laborales por no ser mi especialidad y por miedo a los plazos. Con LEXACTA, expandí los servicios de mi estudio un 40% y duermo tranquila.",
       author: "Dra. Valeria M.",
       role: "Especialista en Familia (CABA)"
     },
     {
       quote: "La función de 'evitar caducidad' ya me salvó de perder clientes. Es como tener un procurador revisando mis causas 24/7.",
       author: "Dr. Leandro S.",
-      role: "Socio Fundador (Córdoba)"
+      role: "Abogado Laborista (Córdoba)"
     },
     {
       quote: "Redacto escritos un 60% más rápido porque el asistente me da la estructura y los términos exactos del fuero que necesito.",
@@ -24,7 +24,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
       <h2 class="font-display font-bold text-3xl md:text-4xl text-primary mb-4">
-        Colegas que ya confían en <span class="text-accent italic">LEXACTA</span>
+        Colegas que ya confían en <span class="text-accent font-display font-bold tracking-tight">LEXACTA</span>
       </h2>
       <p class="font-body text-xl text-text-dark/70">
         Sumate a los profesionales que ya confían en LEXACTA y descubrí cómo transformar tu práctica diaria.

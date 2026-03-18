@@ -18,10 +18,10 @@
     
     <p class="font-body text-xl text-white/90 mb-8 max-w-2xl mx-auto">
       Oferta válida exclusivamente para los primeros 100 inscriptos. <br />
-      Sin compromiso. Sin permanencia. Sin tarjeta de crédito.
+      Sin compromiso. Sin permanencia.
     </p>
     
-    <a href="#registro" class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 font-ui">
+    <a href="https://www.brikzen.ar/contacto/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 font-ui">
       Quiero aprovechar la oferta
       <ArrowRight size={20} />
     </a>

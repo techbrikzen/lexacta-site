@@ -36,7 +36,7 @@
       
       <FeatureCard 
         title="Asistencia y análisis inteligente"
-        text="Analizamos casos complejos, procesamos miles de fojas y te sugerimos estrategias concretas basadas en información estructurada."
+        text="Analizamos casos complejos, procesamos tu expediente y te sugerimos estrategias concretas basadas en información estructurada."
         icon={Lightbulb}
         darkTheme={true}
       />
