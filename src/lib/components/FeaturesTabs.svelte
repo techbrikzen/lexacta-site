@@ -34,7 +34,7 @@
       icon: Folders,
       title: "Todo el contexto del caso en un solo lugar",
       features: [
-        { icon: FileText, text: "Reúne expedientes, archivos, notas y antecedentes." },
+        { icon: FileText, text: "Reúne expedientes, archivos, notas y jurisprudencias." },
         { icon: Users, text: "Comparte información clave con tu equipo de trabajo de forma segura." },
         { icon: LayoutDashboard, text: "Visualiza el estado global de todos tus casos en un dashboard." },
         { icon: ScanText, text: "Clasificación automática de documentos ingresados.", isStar: true },
@@ -155,7 +155,7 @@
           </div>
           
           <div class="mt-10">
-            <a href="#registro" class="inline-flex items-center gap-2 text-primary font-bold hover:text-accent transition-colors">
+            <a href="https://www.brikzen.ar/contacto/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-primary font-bold hover:text-accent transition-colors">
               Explorar el módulo completo <ArrowRight size={20} />
             </a>
           </div>

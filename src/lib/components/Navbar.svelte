@@ -1,7 +1,6 @@
 <script lang="ts">
   import { Menu, X, Scale } from "lucide-svelte";
-  import Button from "./ui/Button.svelte";
-  export let onLogin: () => void;
+  import DemoButton from "./ui/DemoButton.svelte";
   let isMenuOpen = false;
 </script>
 
@@ -24,9 +23,7 @@
 
       <!-- CTA (Desktop) -->
       <div class="hidden md:block">
-        <Button onclick={onLogin} variant="accent" size="sm">
-          Solicitar demo
-        </Button>
+        <DemoButton size="sm" />
       </div>
 
       <!-- Mobile menu button -->
@@ -50,7 +47,7 @@
         <a href="#precios" class="block px-3 py-3 rounded-md text-base font-medium hover:bg-gray-100 transition-colors">Precios</a>
         <a href="#casos-de-uso" class="block px-3 py-3 rounded-md text-base font-medium hover:bg-gray-100 transition-colors">Casos de uso</a>
         <a href="#faq" class="block px-3 py-3 rounded-md text-base font-medium hover:bg-gray-100 transition-colors">Consultas</a>
-        <a href="#registro" class="mt-4 block w-full text-center bg-accent text-white px-6 py-3 rounded-md font-semibold shadow-md">
+        <a href="https://www.brikzen.ar/contacto/" target="_blank" rel="noopener noreferrer" class="mt-4 block w-full text-center bg-accent text-white px-6 py-3 rounded-md font-semibold shadow-md">
           Solicitar demo
         </a>
       </div>

@@ -1,6 +1,7 @@
 <script lang="ts">
   import { ArrowRight, Check, PlayCircle } from "lucide-svelte";
   import Button from "./ui/Button.svelte";
+  import DemoButton from "./ui/DemoButton.svelte";
   import VideoModal from "./VideoModal.svelte";
   
   let showVideo = false;
@@ -23,9 +24,7 @@
 
       <!-- CTAs -->
       <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-10 font-ui">
-        <Button href="#registro" variant="accent" size="lg">
-          Solicitar demo
-        </Button>
+        <DemoButton size="lg" />
         <Button onclick={() => showVideo = true} variant="outline" size="lg">
           <PlayCircle size={20} />
           Ver cómo funciona
